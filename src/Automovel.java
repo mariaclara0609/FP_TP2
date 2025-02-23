@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class Automovel {
     private String matricula;
     private String marca;
@@ -26,6 +28,7 @@ public class Automovel {
     public Automovel(String matricula, String marca) {
         this.matricula = matricula;
         this.marca = marca;
+        this.cilindrada = CILINDRADA_POR_OMISSAO;
         totalAutomoveis++;
     }
 
@@ -87,6 +90,7 @@ public class Automovel {
             return true;
         }
         return false;
+
     }
 
     public static int getTotalAutomoveis() {
